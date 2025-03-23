@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/_components/shared/SingleUniversity/SingleUniversity.jsx",
+    "src/app/pages/singleUniversity/[Name]/page.jsx",
+    "src/app/sitemap.js",
+    "src/app/study-destinations/study-in-the-uk/page.js",
+    "src/app/pages/study-destinations/study-in-the-uk/[Name]/page.jsx",
+    "src/app/pages/study-destinations/may-intake/components/Navbar.jsx",
+    "src/app/api/blogs/route.js",
+    "src/lib/mongodb.js",
+    "src/_components/StudyDestinationComponents/Shared/Components/UniversityCards/UniversityCards.jsx",
+    "src/app/pages/study-destinations/[url]/page.jsx",
+    "src/app/pages/admin/blogs/page.jsx"
+, "src/app/pages/admin/events/page.jsx", "src/_components/BlogEditor/components/MultiImageUpload.jsx", "src/_components/BlogEditor/components/ImageUpload.tsx", "src/app/pages/admin/events/edit/[id]/page.tsx", "src/app/pages/events/[pageUrl]/page.jsx"  ],
+  "exclude": ["node_modules"]
+}
